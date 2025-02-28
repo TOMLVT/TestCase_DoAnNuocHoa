@@ -16,5 +16,17 @@ namespace TestCase_DoAnNuocHoa
         {
             InitializeComponent();
         }
+
+        private void btn_manHinhChinh_Click(object sender, EventArgs e)
+        {
+            manHinhChinh1.Visible = true;
+            hoaDonKhachHang1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            hoaDonKhachHang1.Visible=true;
+            manHinhChinh1.Visible = false;
+        }
     }
 }

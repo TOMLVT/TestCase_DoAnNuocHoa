@@ -59,6 +59,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCHNUOCHOADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UserForm\HoaDonKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForm\HoaDonKhachHang.Designer.cs">
+      <DependentUpon>HoaDonKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm\ManHinhChinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,6 +83,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserForm\HoaDonKhachHang.resx">
+      <DependentUpon>HoaDonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm\ManHinhChinh.resx">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
     </EmbeddedResource>

@@ -44,10 +44,13 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
         }
         
+        // Tải thông tin danh sách nước hoa vào bảng ---------------------------------------------------------------------------------------
         public void LoadDataNuocHoa()
         {
             data_sanPham.DataSource = nuocHoaBLL.GetDataNuocHoa();
         }
+
+        // Load thông tin loại khách hàng vào ComboBOx  ---------------------------------------------------------------------------------------
         public void LoadDataLoaiKhachHang()
         {
             string connectionString = new Database().GetDatabase();
@@ -76,6 +79,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+        // CellClick chọn hiển thị tên sản phẩm  ---------------------------------------------------------------------------------------
         private void data_sanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || data_sanPham.Rows[e.RowIndex] == null)
@@ -96,6 +100,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+        // Nút di chuyển sản phẩm khi đã chọn từ danh sách xuống giỏ hàng  ---------------------------------------------------------------------------------------
         private void btn_DiChuyenGioHang_Click(object sender, EventArgs e)
         {
             if (data_sanPham.CurrentRow == null)
@@ -104,15 +109,15 @@ namespace TestCase_DoAnNuocHoa.UserForm
                 return;
             }
 
-            // Lấy dòng được chọn trong DataGridView
+          
             DataGridViewRow selectedRow = data_sanPham.CurrentRow;
 
-            // Lấy thông tin sản phẩm từ DataGridView
+           
             string productName = selectedRow.Cells["TENSANPHAM"].Value.ToString();
             decimal donGia = Convert.ToDecimal(selectedRow.Cells["DONGIA"].Value);
             decimal giamGia = Convert.ToDecimal(selectedRow.Cells["GIAMGIA"].Value);
 
-            // Kiểm tra số lượng hợp lệ
+           
             if (!int.TryParse(txtSoLuong.Text, out int quantity) || quantity <= 0)
             {
                 MessageBox.Show("Vui lòng nhập số lượng hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -123,10 +128,12 @@ namespace TestCase_DoAnNuocHoa.UserForm
             decimal soTienGiam = (donGia * giamGia / 100) * quantity;
             decimal thanhTien = (donGia - (donGia * giamGia / 100)) * quantity;
 
-            // Kiểm tra xem sản phẩm đã có trong ListView chưa
+            lblGiamGiaSanPham.Text = $"Giảm giá của sản phẩm : {soTienGiam:N0} VND";
+
+
             foreach (ListViewItem item in listView_SanPham.Items)
             {
-                if (item.SubItems[0].Text == productName) // Nếu sản phẩm đã tồn tại
+                if (item.SubItems[0].Text == productName) 
                 {
                     int currentQuantity = int.Parse(item.SubItems[1].Text);
                     decimal currentSoTienGiam = Convert.ToDecimal(item.SubItems[4].Text.Replace(",", ""));
@@ -137,7 +144,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
                     item.SubItems[4].Text = (currentSoTienGiam + soTienGiam).ToString("N0");
                     item.SubItems[5].Text = (currentThanhTien + thanhTien).ToString("N0");
 
-                    // Cập nhật tổng tiền trong giỏ hàng
+                   
                     CapNhatTongTien();
                     return;
                 }
@@ -145,19 +152,22 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
             // Nếu sản phẩm chưa có trong giỏ hàng, thêm mới vào ListView
             ListViewItem newItem = new ListViewItem(productName);
-            newItem.SubItems.Add(quantity.ToString());        // Số lượng
-            newItem.SubItems.Add(donGia.ToString("N0"));      // Giá gốc
-            newItem.SubItems.Add(giamGia.ToString() + "%");   // Giảm giá %
-            newItem.SubItems.Add(soTienGiam.ToString("N0"));  // Tiền giảm giá
-            newItem.SubItems.Add(thanhTien.ToString("N0"));   // Thành tiền sau giảm
+            newItem.SubItems.Add(quantity.ToString());       
+            newItem.SubItems.Add(donGia.ToString("N0"));      
+            newItem.SubItems.Add(giamGia.ToString() + "%");  
+            newItem.SubItems.Add(soTienGiam.ToString("N0"));  
+            newItem.SubItems.Add(thanhTien.ToString("N0"));   
 
             listView_SanPham.Items.Add(newItem);
 
-            // Cập nhật tổng tiền trong giỏ hàng
+          
             CapNhatTongTien();
         }
+
+        // Hàm cập nhật tổng tiền gồm : Tổng tiền giảm của Loại khách hàng + Tiền giảm sản phẩm = Tổng thanh toán  ---------------------------------------------------------------------------------------
         private void CapNhatTongTien()
         {
+         
             decimal tongGiamGia = 0;
             decimal tongThanhTien = 0;
 
@@ -176,7 +186,12 @@ namespace TestCase_DoAnNuocHoa.UserForm
             tongGiamGia += tienGiamGiaLoaiKH;
             txtSoTienGiam.Text = tongGiamGia.ToString("N0");
             txtTongTienThanhToan.Text = tongThanhTien.ToString("N0");
+
+          
+            lblGiamGiaLoaiKH.Text = $"Giảm giá KH: {tienGiamGiaLoaiKH:N0} VND";
         }
+
+        // Hàm tính giảm giá của loại khách hàng  ---------------------------------------------------------------------------------------
         private decimal LayGiamGiaTuLoaiKhachHang(int idLoaiKH)
         {
             decimal giamGia = 0;
@@ -200,6 +215,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
         }
 
 
+        // Sự kiện Load Form chính trong ListView  ---------------------------------------------------------------------------------------
         private void ManHinhChinh_Load(object sender, EventArgs e)
         {
             listView_SanPham.View = View.Details; // Hiển thị dạng bảng
@@ -209,6 +225,8 @@ namespace TestCase_DoAnNuocHoa.UserForm
             listView_SanPham.Columns.Add("Số lượng", 100);
         }
 
+
+        // NÚt xóa sản phẩm trong ListView Giỏ hàng  ---------------------------------------------------------------------------------------
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             if (listView_SanPham.SelectedItems.Count > 0)
@@ -225,6 +243,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+        // Định dạng tổng tiền  ---------------------------------------------------------------------------------------
         private void txtTongTienThanhToan_TextChanged(object sender, EventArgs e)
         {
             string input = txtTongTienThanhToan.Text.Replace(".", "").Replace(" VND", "").Trim();
@@ -237,6 +256,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+        // Định dạng VNĐ trong bảng  ---------------------------------------------------------------------------------------
         private void data_sanPham_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (data_sanPham.Columns[e.ColumnIndex].Name == "DONGIA" && e.Value != null)
@@ -250,6 +270,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+        // NÚt thanh toán thông tin và lưu vào bảng KHACH_HANG + HOADON  ---------------------------------------------------------------------------------------
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(db.GetDatabase()))
@@ -259,11 +280,11 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
                 try
                 {
-                    // 1️⃣ Thêm khách hàng vào bảng KHACHHANG nếu chưa có
+                    // 1️ .  Lưu khách hàng vào bảng KHACHHANG nếu chưa có 
                     string insertKhachHangQuery = @"
-                INSERT INTO KHACHHANG (HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG) 
-                VALUES (@HoTen, @NgaySinh, @DiaChi, @SDT, @LoaiKH);
-                SELECT SCOPE_IDENTITY();";
+            INSERT INTO KHACHHANG (HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG) 
+            VALUES (@HoTen, @NgaySinh, @DiaChi, @SDT, @LoaiKH);
+            SELECT SCOPE_IDENTITY();";
 
                     SqlCommand cmdKhachHang = new SqlCommand(insertKhachHangQuery, conn, transaction);
                     cmdKhachHang.Parameters.AddWithValue("@HoTen", txtHoTen.Text);
@@ -274,8 +295,8 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
                     int idKhachHang = Convert.ToInt32(cmdKhachHang.ExecuteScalar());
 
-                    // 2️⃣ Tổng hợp dữ liệu từ giỏ hàng
-                    string danhSachSanPham = "";
+                    // 2️ .  Gộp dữ liệu từ giỏ hàng thành một chuỗi
+                    List<string> danhSachTenSanPham = new List<string>();
                     int tongSoLuong = 0;
                     decimal tongTien = 0;
 
@@ -285,36 +306,44 @@ namespace TestCase_DoAnNuocHoa.UserForm
                         int soLuong = int.Parse(item.SubItems[1].Text);
                         decimal thanhTien = Convert.ToDecimal(item.SubItems[5].Text.Replace(",", ""));
 
-                        danhSachSanPham += tenSanPham + ", ";
+                      
+                        danhSachTenSanPham.Add(tenSanPham);  // Gộp tên sản phẩm lại thành một chuỗi
                         tongSoLuong += soLuong;
                         tongTien += thanhTien;
-
-
-
-                        // 3️⃣ Lưu từng sản phẩm vào HOADONKHACHHANG
-                        string insertHoaDonQuery = @"
-                    INSERT INTO HOADONKHACHHANG (NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, ID_NUOCHOA, TENSANPHAM, SOLUONG, TONGTIEN) 
-                    VALUES (@NgayXuat, @IDKhachHang, @IDNhanVien, @IDNuocHoa, @TenSanPham, @SoLuong, @TongTien);";
-
-                        SqlCommand cmdHoaDon = new SqlCommand(insertHoaDonQuery, conn, transaction);
-                        cmdHoaDon.Parameters.AddWithValue("@NgayXuat", DateTime.Now);
-                        cmdHoaDon.Parameters.AddWithValue("@IDKhachHang", idKhachHang);
-                        cmdHoaDon.Parameters.AddWithValue("@IDNhanVien", Convert.ToInt32(cb_NhanVien.SelectedValue)); // Chọn nhân viên
-                        cmdHoaDon.Parameters.AddWithValue("@IDNuocHoa", 1); // Tạm đặt ID_NUOCHOA là 1, bạn có thể sửa
-                        cmdHoaDon.Parameters.AddWithValue("@TenSanPham", tenSanPham);
-                        cmdHoaDon.Parameters.AddWithValue("@SoLuong", soLuong);
-                        cmdHoaDon.Parameters.AddWithValue("@TongTien", thanhTien);
-
-                        cmdHoaDon.ExecuteNonQuery();
                     }
 
-                    // Xóa dấu ", " ở cuối danh sách sản phẩm
-                    if (danhSachSanPham.Length > 2)
-                        danhSachSanPham = danhSachSanPham.Substring(0, danhSachSanPham.Length - 2);
+                    string danhSachSanPham = string.Join(", ", danhSachTenSanPham);
 
-                    // 4️⃣ Hiển thị thông tin thanh toán
+
+
+                    // 3️ .  Chèn một dòng duy nhất vào bảng HOADONKHACHHANG
+                    string insertHoaDonQuery = @"
+            INSERT INTO HOADONKHACHHANG (NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, TENSANPHAM,ID_NUOCHOA ,SOLUONG, TONGTIEN) 
+            VALUES (@NgayXuat, @IDKhachHang, @IDNhanVien, @TenSanPham,@ID_NUOCHOA, @SoLuong, @TongTien);";
+
+                    SqlCommand cmdHoaDon = new SqlCommand(insertHoaDonQuery, conn, transaction);
+                    cmdHoaDon.Parameters.AddWithValue("@NgayXuat", DateTime.Now);
+                    cmdHoaDon.Parameters.AddWithValue("@IDKhachHang", idKhachHang);
+                    cmdHoaDon.Parameters.AddWithValue("@IDNhanVien", Convert.ToInt32(cb_NhanVien.SelectedValue));
+                    cmdHoaDon.Parameters.AddWithValue("@TenSanPham", danhSachSanPham);
+                    cmdHoaDon.Parameters.AddWithValue("@ID_NUOCHOA", 1);
+                    cmdHoaDon.Parameters.AddWithValue("@SoLuong", tongSoLuong);
+                    cmdHoaDon.Parameters.AddWithValue("@TongTien", tongTien);
+
+                    cmdHoaDon.ExecuteNonQuery();
+
+                    // 4️ .  Hiển thị thông tin thanh toán
                     MessageBox.Show($"Đã lưu hóa đơn!\nKhách hàng: {txtHoTen.Text}\nSản phẩm: {danhSachSanPham}\nTổng số lượng: {tongSoLuong}\nTổng tiền: {tongTien:N0} VND",
                                     "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtHoTen.Clear();
+                    txtDiaChi.Clear();
+                    txtSDT.Clear();
+                    cb_LoaiKH.SelectedIndex = -1;
+                    cb_NhanVien.SelectedIndex = -1;
+                    date_NgaySinh.Value = DateTime.Now;
+
+                    listView_SanPham.Items.Clear();
 
                     transaction.Commit();
                 }
@@ -326,6 +355,8 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
+
+        // Hàm load thông tin nhân viên trong COmboBox  ---------------------------------------------------------------------------------------
         public void LoadDataChonNhanVien()
         {
             string connectionString = new Database().GetDatabase();
@@ -354,7 +385,7 @@ namespace TestCase_DoAnNuocHoa.UserForm
             }
         }
 
-
+        //  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     }
 }
