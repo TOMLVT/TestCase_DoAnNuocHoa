@@ -46,6 +46,8 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.listView_SanPham = new System.Windows.Forms.ListView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblGiamGiaLoaiKH = new System.Windows.Forms.Label();
+            this.lblGiamGiaSanPham = new System.Windows.Forms.Label();
             this.txtTongTienThanhToan = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtSoTienGiam = new System.Windows.Forms.TextBox();
@@ -58,8 +60,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblGiamGiaSanPham = new System.Windows.Forms.Label();
-            this.lblGiamGiaLoaiKH = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_sanPham)).BeginInit();
@@ -166,11 +166,8 @@
             // 
             // cb_NhanVien
             // 
+            this.cb_NhanVien.Enabled = false;
             this.cb_NhanVien.FormattingEnabled = true;
-            this.cb_NhanVien.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
             this.cb_NhanVien.Location = new System.Drawing.Point(893, 237);
             this.cb_NhanVien.Name = "cb_NhanVien";
             this.cb_NhanVien.Size = new System.Drawing.Size(245, 24);
@@ -286,6 +283,27 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin khách hàng";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblGiamGiaLoaiKH
+            // 
+            this.lblGiamGiaLoaiKH.AutoSize = true;
+            this.lblGiamGiaLoaiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiamGiaLoaiKH.Location = new System.Drawing.Point(811, 72);
+            this.lblGiamGiaLoaiKH.Name = "lblGiamGiaLoaiKH";
+            this.lblGiamGiaLoaiKH.Size = new System.Drawing.Size(72, 16);
+            this.lblGiamGiaLoaiKH.TabIndex = 147;
+            this.lblGiamGiaLoaiKH.Text = "Thông tin 2";
+            // 
+            // lblGiamGiaSanPham
+            // 
+            this.lblGiamGiaSanPham.AutoSize = true;
+            this.lblGiamGiaSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiamGiaSanPham.Location = new System.Drawing.Point(811, 37);
+            this.lblGiamGiaSanPham.Name = "lblGiamGiaSanPham";
+            this.lblGiamGiaSanPham.Size = new System.Drawing.Size(72, 16);
+            this.lblGiamGiaSanPham.TabIndex = 146;
+            this.lblGiamGiaSanPham.Text = "Thông tin 1";
             // 
             // txtTongTienThanhToan
             // 
@@ -395,26 +413,6 @@
             this.label6.Size = new System.Drawing.Size(79, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = "Nhập họ tên";
-            // 
-            // lblGiamGiaSanPham
-            // 
-            this.lblGiamGiaSanPham.AutoSize = true;
-            this.lblGiamGiaSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiamGiaSanPham.Location = new System.Drawing.Point(811, 37);
-            this.lblGiamGiaSanPham.Name = "lblGiamGiaSanPham";
-            this.lblGiamGiaSanPham.Size = new System.Drawing.Size(72, 16);
-            this.lblGiamGiaSanPham.TabIndex = 146;
-            this.lblGiamGiaSanPham.Text = "Thông tin 1";
-            // 
-            // lblGiamGiaLoaiKH
-            // 
-            this.lblGiamGiaLoaiKH.AutoSize = true;
-            this.lblGiamGiaLoaiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiamGiaLoaiKH.Location = new System.Drawing.Point(811, 72);
-            this.lblGiamGiaLoaiKH.Name = "lblGiamGiaLoaiKH";
-            this.lblGiamGiaLoaiKH.Size = new System.Drawing.Size(72, 16);
-            this.lblGiamGiaLoaiKH.TabIndex = 147;
-            this.lblGiamGiaLoaiKH.Text = "Thông tin 2";
             // 
             // ManHinhChinh
             // 

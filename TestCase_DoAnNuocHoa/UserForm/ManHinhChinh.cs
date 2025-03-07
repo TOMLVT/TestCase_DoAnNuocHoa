@@ -1,5 +1,6 @@
 ﻿using BLL.BLL;
 using DAL.Database;
+using DAL.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,23 +16,46 @@ namespace TestCase_DoAnNuocHoa.UserForm
 {
     public partial class ManHinhChinh : UserControl
     {
+        /***
+         * 
+         * * Quy trình Mô đun : -----------------------------------
+         
+
+         - Tải danh sách sản phẩm + CellCLick 
+
+        - Tải loại khách hàng vào ComboBOx
+            
+        - Nút di chuyển sản phẩm + Load Form gốc 
+
+        - Tính tổng tiền 
+
+        - Tính giảm giả của loại khách hàng 
+
+        - Định dạng VNĐ 
+
+        - Lấy thông tin nhân viên đang đăng nhập + Model Thông tin cá nhân 
+
+        - NÚt thanh toán 
+        
+         */
+
+
         Database db = new Database();
 
         private BLL_SanPhamNuocHoa nuocHoaBLL;
 
-        private Timer LoaiKhachHangTimer, NhanVienTimer;
+        private BLL_NhanVien nhanvienBll;
 
+        private Timer LoaiKhachHangTimer;
+
+     
         public ManHinhChinh()
         {
             InitializeComponent();
 
             nuocHoaBLL = new BLL_SanPhamNuocHoa(new Database().GetDatabase());
 
-            NhanVienTimer = new Timer();
-            NhanVienTimer.Interval = 1000;
-            NhanVienTimer.Tick += (s, e) => LoadDataChonNhanVien();
-            NhanVienTimer.Start();
-
+            nhanvienBll = new BLL_NhanVien(new Database().GetDatabase());
 
             // Load dữ liệu vào combobox 
             LoaiKhachHangTimer = new Timer();
@@ -41,9 +65,13 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
             LoadDataNuocHoa();
 
+          
 
+         
         }
-        
+
+      
+
         // Tải thông tin danh sách nước hoa vào bảng ---------------------------------------------------------------------------------------
         public void LoadDataNuocHoa()
         {
@@ -223,6 +251,14 @@ namespace TestCase_DoAnNuocHoa.UserForm
             listView_SanPham.GridLines = true; // Hiển thị đường kẻ
             listView_SanPham.Columns.Add("Tên sản phẩm", 200);
             listView_SanPham.Columns.Add("Số lượng", 100);
+
+
+            cb_NhanVien.DataSource = nhanvienBll.getNhanVien();
+            cb_NhanVien.DisplayMember = "HOTEN";
+            cb_NhanVien.ValueMember = "ID_NHANVIEN";
+
+          
+            cb_NhanVien.SelectedIndex = cb_NhanVien.FindStringExact(ThongTinCaNhan.TenNhanVien);
         }
 
 
@@ -266,6 +302,21 @@ namespace TestCase_DoAnNuocHoa.UserForm
 
                     e.Value = string.Format("{0:N0} VND", mucLuong);
                     e.FormattingApplied = true;
+                }
+            }
+        }
+        private int GetIDNhanVien(string tenNhanVien)
+        {
+            string connectionString = db.GetDatabase();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT ID_TAIKHOAN FROM NHANVIEN WHERE HOTEN = @TenNhanVien";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
+                    object result = cmd.ExecuteScalar();
+                    return result != null ? Convert.ToInt32(result) : -1; // Trả về -1 nếu không tìm thấy
                 }
             }
         }
@@ -324,7 +375,8 @@ namespace TestCase_DoAnNuocHoa.UserForm
                     SqlCommand cmdHoaDon = new SqlCommand(insertHoaDonQuery, conn, transaction);
                     cmdHoaDon.Parameters.AddWithValue("@NgayXuat", DateTime.Now);
                     cmdHoaDon.Parameters.AddWithValue("@IDKhachHang", idKhachHang);
-                    cmdHoaDon.Parameters.AddWithValue("@IDNhanVien", Convert.ToInt32(cb_NhanVien.SelectedValue));
+                    cmdHoaDon.Parameters.AddWithValue("@IDNhanVien", GetIDNhanVien(ThongTinCaNhan.TenNhanVien));
+
                     cmdHoaDon.Parameters.AddWithValue("@TenSanPham", danhSachSanPham);
                     cmdHoaDon.Parameters.AddWithValue("@ID_NUOCHOA", 1);
                     cmdHoaDon.Parameters.AddWithValue("@SoLuong", tongSoLuong);
@@ -356,33 +408,11 @@ namespace TestCase_DoAnNuocHoa.UserForm
         }
 
 
-        // Hàm load thông tin nhân viên trong COmboBox  ---------------------------------------------------------------------------------------
-        public void LoadDataChonNhanVien()
+       
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            string connectionString = new Database().GetDatabase();
-            string query = "SELECT ID_NHANVIEN, HOTEN FROM NHANVIEN";
 
-
-            var selectedValue = cb_NhanVien.SelectedValue;
-
-            SqlDataAdapter da = new SqlDataAdapter(query, connectionString);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-
-            cb_NhanVien.DisplayMember = "HOTEN";
-            cb_NhanVien.ValueMember = "ID_NHANVIEN";
-            cb_NhanVien.DataSource = dt;
-
-
-            if (selectedValue != null && dt.AsEnumerable().Any(row => row["ID_NHANVIEN"].ToString() == selectedValue.ToString()))
-            {
-                cb_NhanVien.SelectedValue = selectedValue;
-            }
-            else
-            {
-
-                cb_NhanVien.SelectedIndex = 0;
-            }
         }
 
         //  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

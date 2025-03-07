@@ -32,7 +32,7 @@
             this.btn_manHinhChinh = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.hoaDonKhachHang1 = new TestCase_DoAnNuocHoa.UserForm.HoaDonKhachHang();
-            this.manHinhChinh1 = new TestCase_DoAnNuocHoa.UserForm.ManHinhChinh();
+            this.manHinhChinh2 = new TestCase_DoAnNuocHoa.UserForm.ManHinhChinh();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,19 +75,19 @@
             this.hoaDonKhachHang1.Size = new System.Drawing.Size(1105, 890);
             this.hoaDonKhachHang1.TabIndex = 1;
             // 
-            // manHinhChinh1
+            // manHinhChinh2
             // 
-            this.manHinhChinh1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manHinhChinh1.Location = new System.Drawing.Point(336, 0);
-            this.manHinhChinh1.Name = "manHinhChinh1";
-            this.manHinhChinh1.Size = new System.Drawing.Size(1105, 890);
-            this.manHinhChinh1.TabIndex = 2;
+            this.manHinhChinh2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manHinhChinh2.Location = new System.Drawing.Point(336, 0);
+            this.manHinhChinh2.Name = "manHinhChinh2";
+            this.manHinhChinh2.Size = new System.Drawing.Size(1105, 890);
+            this.manHinhChinh2.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1441, 890);
-            this.Controls.Add(this.manHinhChinh1);
+            this.Controls.Add(this.manHinhChinh2);
             this.Controls.Add(this.hoaDonKhachHang1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -104,8 +104,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_manHinhChinh;
         private System.Windows.Forms.Button button2;
-        private UserForm.HoaDonKhachHang hoaDonKhachHang1;
         private UserForm.ManHinhChinh manHinhChinh1;
+        private UserForm.HoaDonKhachHang hoaDonKhachHang1;
+        private UserForm.ManHinhChinh manHinhChinh2;
     }
 }
 
