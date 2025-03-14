@@ -8,7 +8,7 @@ namespace DAL.Database
 {
     public class Database
     {
-        string connectionString = @"Data Source=LAPTOP-DOCKI20T;Initial Catalog=QLCHNUOCHOA;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        string connectionString = @"Data Source=LAPTOP-DOCKI20T;Initial Catalog=TestCase_NuocHoa;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
         public string GetDatabase()
         {

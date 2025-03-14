@@ -20,9 +20,9 @@ namespace TestCase_DoAnNuocHoa {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("QLCHNUOCHOADataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("TestCase_NuocHoaDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class QLCHNUOCHOADataSet : global::System.Data.DataSet {
+    public partial class TestCase_NuocHoaDataSet : global::System.Data.DataSet {
         
         private CALAMVIECDataTable tableCALAMVIEC;
         
@@ -54,17 +54,17 @@ namespace TestCase_DoAnNuocHoa {
         
         private global::System.Data.DataRelation relationFK__CHAMCONGL__ID_NH__46E78A0C;
         
-        private global::System.Data.DataRelation relationFK__CHITIETPH__ID_NU__5AEE82B9;
+        private global::System.Data.DataRelation relationFK__CHITIETPH__ID_NU__5BE2A6F2;
         
-        private global::System.Data.DataRelation relationFK__CHITIETPH__ID_PH__59FA5E80;
+        private global::System.Data.DataRelation relationFK__CHITIETPH__ID_PH__5AEE82B9;
         
-        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_KH__5DCAEF64;
+        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_KH__5EBF139D;
         
-        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_NH__5EBF139D;
+        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_NH__5FB337D6;
         
-        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_NU__5FB337D6;
+        private global::System.Data.DataRelation relationFK__HOADONKHA__ID_NU__60A75C0F;
         
-        private global::System.Data.DataRelation relationFK__KHACHHANG__ID_LO__5441852A;
+        private global::System.Data.DataRelation relationFK__KHACHHANG__ID_LO__5535A963;
         
         private global::System.Data.DataRelation relationFK__NHANVIEN__ID_TAI__3E52440B;
         
@@ -72,11 +72,11 @@ namespace TestCase_DoAnNuocHoa {
         
         private global::System.Data.DataRelation relationFK__PHANCONGC__ID_NH__4316F928;
         
-        private global::System.Data.DataRelation relationFK__PHIEUNHAP__ID_NH__571DF1D5;
+        private global::System.Data.DataRelation relationFK__PHIEUNHAP__ID_NH__5812160E;
         
-        private global::System.Data.DataRelation relationFK__SANPHAMNU__ID_LO__4F7CD00D;
+        private global::System.Data.DataRelation relationFK__SANPHAMNU__ID_LO__5070F446;
         
-        private global::System.Data.DataRelation relationFK__SANPHAMNU__ID_NH__4E88ABD4;
+        private global::System.Data.DataRelation relationFK__SANPHAMNU__ID_NH__4F7CD00D;
         
         private global::System.Data.DataRelation relationFK__TAIKHOAN__ID_PHA__398D8EEE;
         
@@ -84,7 +84,7 @@ namespace TestCase_DoAnNuocHoa {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public QLCHNUOCHOADataSet() {
+        public TestCase_NuocHoaDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -95,7 +95,7 @@ namespace TestCase_DoAnNuocHoa {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected QLCHNUOCHOADataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected TestCase_NuocHoaDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -350,7 +350,7 @@ namespace TestCase_DoAnNuocHoa {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            QLCHNUOCHOADataSet cln = ((QLCHNUOCHOADataSet)(base.Clone()));
+            TestCase_NuocHoaDataSet cln = ((TestCase_NuocHoaDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -535,27 +535,27 @@ namespace TestCase_DoAnNuocHoa {
                 }
             }
             this.relationFK__CHAMCONGL__ID_NH__46E78A0C = this.Relations["FK__CHAMCONGL__ID_NH__46E78A0C"];
-            this.relationFK__CHITIETPH__ID_NU__5AEE82B9 = this.Relations["FK__CHITIETPH__ID_NU__5AEE82B9"];
-            this.relationFK__CHITIETPH__ID_PH__59FA5E80 = this.Relations["FK__CHITIETPH__ID_PH__59FA5E80"];
-            this.relationFK__HOADONKHA__ID_KH__5DCAEF64 = this.Relations["FK__HOADONKHA__ID_KH__5DCAEF64"];
-            this.relationFK__HOADONKHA__ID_NH__5EBF139D = this.Relations["FK__HOADONKHA__ID_NH__5EBF139D"];
-            this.relationFK__HOADONKHA__ID_NU__5FB337D6 = this.Relations["FK__HOADONKHA__ID_NU__5FB337D6"];
-            this.relationFK__KHACHHANG__ID_LO__5441852A = this.Relations["FK__KHACHHANG__ID_LO__5441852A"];
+            this.relationFK__CHITIETPH__ID_NU__5BE2A6F2 = this.Relations["FK__CHITIETPH__ID_NU__5BE2A6F2"];
+            this.relationFK__CHITIETPH__ID_PH__5AEE82B9 = this.Relations["FK__CHITIETPH__ID_PH__5AEE82B9"];
+            this.relationFK__HOADONKHA__ID_KH__5EBF139D = this.Relations["FK__HOADONKHA__ID_KH__5EBF139D"];
+            this.relationFK__HOADONKHA__ID_NH__5FB337D6 = this.Relations["FK__HOADONKHA__ID_NH__5FB337D6"];
+            this.relationFK__HOADONKHA__ID_NU__60A75C0F = this.Relations["FK__HOADONKHA__ID_NU__60A75C0F"];
+            this.relationFK__KHACHHANG__ID_LO__5535A963 = this.Relations["FK__KHACHHANG__ID_LO__5535A963"];
             this.relationFK__NHANVIEN__ID_TAI__3E52440B = this.Relations["FK__NHANVIEN__ID_TAI__3E52440B"];
             this.relationFK__PHANCONGC__ID_CA__440B1D61 = this.Relations["FK__PHANCONGC__ID_CA__440B1D61"];
             this.relationFK__PHANCONGC__ID_NH__4316F928 = this.Relations["FK__PHANCONGC__ID_NH__4316F928"];
-            this.relationFK__PHIEUNHAP__ID_NH__571DF1D5 = this.Relations["FK__PHIEUNHAP__ID_NH__571DF1D5"];
-            this.relationFK__SANPHAMNU__ID_LO__4F7CD00D = this.Relations["FK__SANPHAMNU__ID_LO__4F7CD00D"];
-            this.relationFK__SANPHAMNU__ID_NH__4E88ABD4 = this.Relations["FK__SANPHAMNU__ID_NH__4E88ABD4"];
+            this.relationFK__PHIEUNHAP__ID_NH__5812160E = this.Relations["FK__PHIEUNHAP__ID_NH__5812160E"];
+            this.relationFK__SANPHAMNU__ID_LO__5070F446 = this.Relations["FK__SANPHAMNU__ID_LO__5070F446"];
+            this.relationFK__SANPHAMNU__ID_NH__4F7CD00D = this.Relations["FK__SANPHAMNU__ID_NH__4F7CD00D"];
             this.relationFK__TAIKHOAN__ID_PHA__398D8EEE = this.Relations["FK__TAIKHOAN__ID_PHA__398D8EEE"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "QLCHNUOCHOADataSet";
+            this.DataSetName = "TestCase_NuocHoaDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/QLCHNUOCHOADataSet.xsd";
+            this.Namespace = "http://tempuri.org/TestCase_NuocHoaDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCALAMVIEC = new CALAMVIECDataTable();
@@ -590,30 +590,30 @@ namespace TestCase_DoAnNuocHoa {
                         this.tableNHANVIEN.ID_NHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHAMCONGLAMVIEC.ID_NHANVIENColumn}, false);
             this.Relations.Add(this.relationFK__CHAMCONGL__ID_NH__46E78A0C);
-            this.relationFK__CHITIETPH__ID_NU__5AEE82B9 = new global::System.Data.DataRelation("FK__CHITIETPH__ID_NU__5AEE82B9", new global::System.Data.DataColumn[] {
+            this.relationFK__CHITIETPH__ID_NU__5BE2A6F2 = new global::System.Data.DataRelation("FK__CHITIETPH__ID_NU__5BE2A6F2", new global::System.Data.DataColumn[] {
                         this.tableSANPHAMNUOCHOA.ID_NUOCHOAColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHITIETPHIEUNHAP.ID_NUOCHOAColumn}, false);
-            this.Relations.Add(this.relationFK__CHITIETPH__ID_NU__5AEE82B9);
-            this.relationFK__CHITIETPH__ID_PH__59FA5E80 = new global::System.Data.DataRelation("FK__CHITIETPH__ID_PH__59FA5E80", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CHITIETPH__ID_NU__5BE2A6F2);
+            this.relationFK__CHITIETPH__ID_PH__5AEE82B9 = new global::System.Data.DataRelation("FK__CHITIETPH__ID_PH__5AEE82B9", new global::System.Data.DataColumn[] {
                         this.tablePHIEUNHAP.ID_PHIEUNHAPColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHITIETPHIEUNHAP.ID_PHIEUNHAPColumn}, false);
-            this.Relations.Add(this.relationFK__CHITIETPH__ID_PH__59FA5E80);
-            this.relationFK__HOADONKHA__ID_KH__5DCAEF64 = new global::System.Data.DataRelation("FK__HOADONKHA__ID_KH__5DCAEF64", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CHITIETPH__ID_PH__5AEE82B9);
+            this.relationFK__HOADONKHA__ID_KH__5EBF139D = new global::System.Data.DataRelation("FK__HOADONKHA__ID_KH__5EBF139D", new global::System.Data.DataColumn[] {
                         this.tableKHACHHANG.ID_KHACHHANGColumn}, new global::System.Data.DataColumn[] {
                         this.tableHOADONKHACHHANG.ID_KHACHHANGColumn}, false);
-            this.Relations.Add(this.relationFK__HOADONKHA__ID_KH__5DCAEF64);
-            this.relationFK__HOADONKHA__ID_NH__5EBF139D = new global::System.Data.DataRelation("FK__HOADONKHA__ID_NH__5EBF139D", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__HOADONKHA__ID_KH__5EBF139D);
+            this.relationFK__HOADONKHA__ID_NH__5FB337D6 = new global::System.Data.DataRelation("FK__HOADONKHA__ID_NH__5FB337D6", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.ID_NHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tableHOADONKHACHHANG.ID_NHANVIENColumn}, false);
-            this.Relations.Add(this.relationFK__HOADONKHA__ID_NH__5EBF139D);
-            this.relationFK__HOADONKHA__ID_NU__5FB337D6 = new global::System.Data.DataRelation("FK__HOADONKHA__ID_NU__5FB337D6", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__HOADONKHA__ID_NH__5FB337D6);
+            this.relationFK__HOADONKHA__ID_NU__60A75C0F = new global::System.Data.DataRelation("FK__HOADONKHA__ID_NU__60A75C0F", new global::System.Data.DataColumn[] {
                         this.tableSANPHAMNUOCHOA.ID_NUOCHOAColumn}, new global::System.Data.DataColumn[] {
                         this.tableHOADONKHACHHANG.ID_NUOCHOAColumn}, false);
-            this.Relations.Add(this.relationFK__HOADONKHA__ID_NU__5FB337D6);
-            this.relationFK__KHACHHANG__ID_LO__5441852A = new global::System.Data.DataRelation("FK__KHACHHANG__ID_LO__5441852A", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__HOADONKHA__ID_NU__60A75C0F);
+            this.relationFK__KHACHHANG__ID_LO__5535A963 = new global::System.Data.DataRelation("FK__KHACHHANG__ID_LO__5535A963", new global::System.Data.DataColumn[] {
                         this.tableLOAIKHACHHANG.ID_LOAIKHACHHANGColumn}, new global::System.Data.DataColumn[] {
                         this.tableKHACHHANG.ID_LOAIKHACHHANGColumn}, false);
-            this.Relations.Add(this.relationFK__KHACHHANG__ID_LO__5441852A);
+            this.Relations.Add(this.relationFK__KHACHHANG__ID_LO__5535A963);
             this.relationFK__NHANVIEN__ID_TAI__3E52440B = new global::System.Data.DataRelation("FK__NHANVIEN__ID_TAI__3E52440B", new global::System.Data.DataColumn[] {
                         this.tableTAIKHOAN.ID_TAIKHOANColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.ID_TAIKHOANColumn}, false);
@@ -626,18 +626,18 @@ namespace TestCase_DoAnNuocHoa {
                         this.tableNHANVIEN.ID_NHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHANCONGCALAM.ID_NHANVIENColumn}, false);
             this.Relations.Add(this.relationFK__PHANCONGC__ID_NH__4316F928);
-            this.relationFK__PHIEUNHAP__ID_NH__571DF1D5 = new global::System.Data.DataRelation("FK__PHIEUNHAP__ID_NH__571DF1D5", new global::System.Data.DataColumn[] {
+            this.relationFK__PHIEUNHAP__ID_NH__5812160E = new global::System.Data.DataRelation("FK__PHIEUNHAP__ID_NH__5812160E", new global::System.Data.DataColumn[] {
                         this.tableNHACUNGCAP.ID_NHACCColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHIEUNHAP.ID_NHACCColumn}, false);
-            this.Relations.Add(this.relationFK__PHIEUNHAP__ID_NH__571DF1D5);
-            this.relationFK__SANPHAMNU__ID_LO__4F7CD00D = new global::System.Data.DataRelation("FK__SANPHAMNU__ID_LO__4F7CD00D", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PHIEUNHAP__ID_NH__5812160E);
+            this.relationFK__SANPHAMNU__ID_LO__5070F446 = new global::System.Data.DataRelation("FK__SANPHAMNU__ID_LO__5070F446", new global::System.Data.DataColumn[] {
                         this.tableLOAISANPHAM.ID_LOAISPColumn}, new global::System.Data.DataColumn[] {
                         this.tableSANPHAMNUOCHOA.ID_LOAISPColumn}, false);
-            this.Relations.Add(this.relationFK__SANPHAMNU__ID_LO__4F7CD00D);
-            this.relationFK__SANPHAMNU__ID_NH__4E88ABD4 = new global::System.Data.DataRelation("FK__SANPHAMNU__ID_NH__4E88ABD4", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SANPHAMNU__ID_LO__5070F446);
+            this.relationFK__SANPHAMNU__ID_NH__4F7CD00D = new global::System.Data.DataRelation("FK__SANPHAMNU__ID_NH__4F7CD00D", new global::System.Data.DataColumn[] {
                         this.tableNHACUNGCAP.ID_NHACCColumn}, new global::System.Data.DataColumn[] {
                         this.tableSANPHAMNUOCHOA.ID_NHACCColumn}, false);
-            this.Relations.Add(this.relationFK__SANPHAMNU__ID_NH__4E88ABD4);
+            this.Relations.Add(this.relationFK__SANPHAMNU__ID_NH__4F7CD00D);
             this.relationFK__TAIKHOAN__ID_PHA__398D8EEE = new global::System.Data.DataRelation("FK__TAIKHOAN__ID_PHA__398D8EEE", new global::System.Data.DataColumn[] {
                         this.tablePHANQUYEN.ID_PHANQUYENColumn}, new global::System.Data.DataColumn[] {
                         this.tableTAIKHOAN.ID_PHANQUYENColumn}, false);
@@ -739,7 +739,7 @@ namespace TestCase_DoAnNuocHoa {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+            TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1074,7 +1074,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1384,7 +1384,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1570,7 +1570,7 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CHITIETPHIEUNHAPRow AddCHITIETPHIEUNHAPRow(PHIEUNHAPRow parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__59FA5E80, SANPHAMNUOCHOARow parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5AEE82B9, decimal DONGIANHAP, int SOLUONGNHAP) {
+            public CHITIETPHIEUNHAPRow AddCHITIETPHIEUNHAPRow(PHIEUNHAPRow parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__5AEE82B9, SANPHAMNUOCHOARow parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5BE2A6F2, decimal DONGIANHAP, int SOLUONGNHAP) {
                 CHITIETPHIEUNHAPRow rowCHITIETPHIEUNHAPRow = ((CHITIETPHIEUNHAPRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1578,11 +1578,11 @@ namespace TestCase_DoAnNuocHoa {
                         null,
                         DONGIANHAP,
                         SOLUONGNHAP};
-                if ((parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__59FA5E80 != null)) {
-                    columnValuesArray[1] = parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__59FA5E80[0];
+                if ((parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__5AEE82B9 != null)) {
+                    columnValuesArray[1] = parentPHIEUNHAPRowByFK__CHITIETPH__ID_PH__5AEE82B9[0];
                 }
-                if ((parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5AEE82B9 != null)) {
-                    columnValuesArray[2] = parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5AEE82B9[0];
+                if ((parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5BE2A6F2 != null)) {
+                    columnValuesArray[2] = parentSANPHAMNUOCHOARowByFK__CHITIETPH__ID_NU__5BE2A6F2[0];
                 }
                 rowCHITIETPHIEUNHAPRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCHITIETPHIEUNHAPRow);
@@ -1710,7 +1710,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1926,7 +1926,7 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public HOADONKHACHHANGRow AddHOADONKHACHHANGRow(System.DateTime NGAYXUAT, KHACHHANGRow parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5DCAEF64, NHANVIENRow parentNHANVIENRowByFK__HOADONKHA__ID_NH__5EBF139D, SANPHAMNUOCHOARow parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__5FB337D6, string TENSANPHAM, int SOLUONG, decimal TONGTIEN) {
+            public HOADONKHACHHANGRow AddHOADONKHACHHANGRow(System.DateTime NGAYXUAT, KHACHHANGRow parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5EBF139D, NHANVIENRow parentNHANVIENRowByFK__HOADONKHA__ID_NH__5FB337D6, SANPHAMNUOCHOARow parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__60A75C0F, string TENSANPHAM, int SOLUONG, decimal TONGTIEN) {
                 HOADONKHACHHANGRow rowHOADONKHACHHANGRow = ((HOADONKHACHHANGRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1937,14 +1937,14 @@ namespace TestCase_DoAnNuocHoa {
                         TENSANPHAM,
                         SOLUONG,
                         TONGTIEN};
-                if ((parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5DCAEF64 != null)) {
-                    columnValuesArray[2] = parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5DCAEF64[0];
+                if ((parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5EBF139D != null)) {
+                    columnValuesArray[2] = parentKHACHHANGRowByFK__HOADONKHA__ID_KH__5EBF139D[0];
                 }
-                if ((parentNHANVIENRowByFK__HOADONKHA__ID_NH__5EBF139D != null)) {
-                    columnValuesArray[3] = parentNHANVIENRowByFK__HOADONKHA__ID_NH__5EBF139D[0];
+                if ((parentNHANVIENRowByFK__HOADONKHA__ID_NH__5FB337D6 != null)) {
+                    columnValuesArray[3] = parentNHANVIENRowByFK__HOADONKHA__ID_NH__5FB337D6[0];
                 }
-                if ((parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__5FB337D6 != null)) {
-                    columnValuesArray[4] = parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__5FB337D6[0];
+                if ((parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__60A75C0F != null)) {
+                    columnValuesArray[4] = parentSANPHAMNUOCHOARowByFK__HOADONKHA__ID_NU__60A75C0F[0];
                 }
                 rowHOADONKHACHHANGRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowHOADONKHACHHANGRow);
@@ -2084,7 +2084,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2280,7 +2280,7 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public KHACHHANGRow AddKHACHHANGRow(string HOTEN, System.DateTime NGAYSINH, string DIACHI, string SDT, LOAIKHACHHANGRow parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5441852A) {
+            public KHACHHANGRow AddKHACHHANGRow(string HOTEN, System.DateTime NGAYSINH, string DIACHI, string SDT, LOAIKHACHHANGRow parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5535A963) {
                 KHACHHANGRow rowKHACHHANGRow = ((KHACHHANGRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2289,8 +2289,8 @@ namespace TestCase_DoAnNuocHoa {
                         DIACHI,
                         SDT,
                         null};
-                if ((parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5441852A != null)) {
-                    columnValuesArray[5] = parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5441852A[0];
+                if ((parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5535A963 != null)) {
+                    columnValuesArray[5] = parentLOAIKHACHHANGRowByFK__KHACHHANG__ID_LO__5535A963[0];
                 }
                 rowKHACHHANGRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKHACHHANGRow);
@@ -2424,7 +2424,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2717,7 +2717,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2995,7 +2995,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3305,7 +3305,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3676,7 +3676,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3987,7 +3987,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4295,7 +4295,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4367,6 +4367,8 @@ namespace TestCase_DoAnNuocHoa {
             
             private global::System.Data.DataColumn columnNGAYNHAP;
             
+            private global::System.Data.DataColumn columnTENPHIEUNHAP;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PHIEUNHAPDataTable() {
@@ -4426,6 +4428,14 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TENPHIEUNHAPColumn {
+                get {
+                    return this.columnTENPHIEUNHAP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4461,14 +4471,15 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PHIEUNHAPRow AddPHIEUNHAPRow(NHACUNGCAPRow parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__571DF1D5, System.DateTime NGAYNHAP) {
+            public PHIEUNHAPRow AddPHIEUNHAPRow(NHACUNGCAPRow parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__5812160E, System.DateTime NGAYNHAP, string TENPHIEUNHAP) {
                 PHIEUNHAPRow rowPHIEUNHAPRow = ((PHIEUNHAPRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
-                        NGAYNHAP};
-                if ((parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__571DF1D5 != null)) {
-                    columnValuesArray[1] = parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__571DF1D5[0];
+                        NGAYNHAP,
+                        TENPHIEUNHAP};
+                if ((parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__5812160E != null)) {
+                    columnValuesArray[1] = parentNHACUNGCAPRowByFK__PHIEUNHAP__ID_NH__5812160E[0];
                 }
                 rowPHIEUNHAPRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPHIEUNHAPRow);
@@ -4502,6 +4513,7 @@ namespace TestCase_DoAnNuocHoa {
                 this.columnID_PHIEUNHAP = base.Columns["ID_PHIEUNHAP"];
                 this.columnID_NHACC = base.Columns["ID_NHACC"];
                 this.columnNGAYNHAP = base.Columns["NGAYNHAP"];
+                this.columnTENPHIEUNHAP = base.Columns["TENPHIEUNHAP"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4513,6 +4525,8 @@ namespace TestCase_DoAnNuocHoa {
                 base.Columns.Add(this.columnID_NHACC);
                 this.columnNGAYNHAP = new global::System.Data.DataColumn("NGAYNHAP", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNGAYNHAP);
+                this.columnTENPHIEUNHAP = new global::System.Data.DataColumn("TENPHIEUNHAP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTENPHIEUNHAP);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_PHIEUNHAP}, true));
                 this.columnID_PHIEUNHAP.AutoIncrement = true;
@@ -4522,6 +4536,7 @@ namespace TestCase_DoAnNuocHoa {
                 this.columnID_PHIEUNHAP.ReadOnly = true;
                 this.columnID_PHIEUNHAP.Unique = true;
                 this.columnNGAYNHAP.AllowDBNull = false;
+                this.columnTENPHIEUNHAP.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4589,7 +4604,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4815,7 +4830,7 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SANPHAMNUOCHOARow AddSANPHAMNUOCHOARow(string TENSANPHAM, int DUNGTICH, decimal DONGIA, decimal GIAMGIA, int SOLUONGTON, int DABAN, NHACUNGCAPRow parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4E88ABD4, LOAISANPHAMRow parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__4F7CD00D) {
+            public SANPHAMNUOCHOARow AddSANPHAMNUOCHOARow(string TENSANPHAM, int DUNGTICH, decimal DONGIA, decimal GIAMGIA, int SOLUONGTON, int DABAN, NHACUNGCAPRow parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4F7CD00D, LOAISANPHAMRow parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__5070F446) {
                 SANPHAMNUOCHOARow rowSANPHAMNUOCHOARow = ((SANPHAMNUOCHOARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -4827,11 +4842,11 @@ namespace TestCase_DoAnNuocHoa {
                         DABAN,
                         null,
                         null};
-                if ((parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4E88ABD4 != null)) {
-                    columnValuesArray[7] = parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4E88ABD4[0];
+                if ((parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4F7CD00D != null)) {
+                    columnValuesArray[7] = parentNHACUNGCAPRowByFK__SANPHAMNU__ID_NH__4F7CD00D[0];
                 }
-                if ((parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__4F7CD00D != null)) {
-                    columnValuesArray[8] = parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__4F7CD00D[0];
+                if ((parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__5070F446 != null)) {
+                    columnValuesArray[8] = parentLOAISANPHAMRowByFK__SANPHAMNU__ID_LO__5070F446[0];
                 }
                 rowSANPHAMNUOCHOARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSANPHAMNUOCHOARow);
@@ -4975,7 +4990,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5286,7 +5301,7 @@ namespace TestCase_DoAnNuocHoa {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLCHNUOCHOADataSet ds = new QLCHNUOCHOADataSet();
+                TestCase_NuocHoaDataSet ds = new TestCase_NuocHoaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5585,10 +5600,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SANPHAMNUOCHOARow SANPHAMNUOCHOARow {
                 get {
-                    return ((SANPHAMNUOCHOARow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETPH__ID_NU__5AEE82B9"])));
+                    return ((SANPHAMNUOCHOARow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETPH__ID_NU__5BE2A6F2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETPH__ID_NU__5AEE82B9"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETPH__ID_NU__5BE2A6F2"]);
                 }
             }
             
@@ -5596,10 +5611,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PHIEUNHAPRow PHIEUNHAPRow {
                 get {
-                    return ((PHIEUNHAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETPH__ID_PH__59FA5E80"])));
+                    return ((PHIEUNHAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETPH__ID_PH__5AEE82B9"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETPH__ID_PH__59FA5E80"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETPH__ID_PH__5AEE82B9"]);
                 }
             }
             
@@ -5749,10 +5764,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public KHACHHANGRow KHACHHANGRow {
                 get {
-                    return ((KHACHHANGRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_KH__5DCAEF64"])));
+                    return ((KHACHHANGRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_KH__5EBF139D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_KH__5DCAEF64"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_KH__5EBF139D"]);
                 }
             }
             
@@ -5760,10 +5775,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public NHANVIENRow NHANVIENRow {
                 get {
-                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_NH__5EBF139D"])));
+                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_NH__5FB337D6"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_NH__5EBF139D"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_NH__5FB337D6"]);
                 }
             }
             
@@ -5771,10 +5786,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SANPHAMNUOCHOARow SANPHAMNUOCHOARow {
                 get {
-                    return ((SANPHAMNUOCHOARow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_NU__5FB337D6"])));
+                    return ((SANPHAMNUOCHOARow)(this.GetParentRow(this.Table.ParentRelations["FK__HOADONKHA__ID_NU__60A75C0F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_NU__5FB337D6"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOADONKHA__ID_NU__60A75C0F"]);
                 }
             }
             
@@ -5914,10 +5929,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LOAIKHACHHANGRow LOAIKHACHHANGRow {
                 get {
-                    return ((LOAIKHACHHANGRow)(this.GetParentRow(this.Table.ParentRelations["FK__KHACHHANG__ID_LO__5441852A"])));
+                    return ((LOAIKHACHHANGRow)(this.GetParentRow(this.Table.ParentRelations["FK__KHACHHANG__ID_LO__5535A963"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__KHACHHANG__ID_LO__5441852A"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__KHACHHANG__ID_LO__5535A963"]);
                 }
             }
             
@@ -5960,11 +5975,11 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public HOADONKHACHHANGRow[] GetHOADONKHACHHANGRows() {
-                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_KH__5DCAEF64"] == null)) {
+                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_KH__5EBF139D"] == null)) {
                     return new HOADONKHACHHANGRow[0];
                 }
                 else {
-                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_KH__5DCAEF64"])));
+                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_KH__5EBF139D"])));
                 }
             }
         }
@@ -6019,11 +6034,11 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public KHACHHANGRow[] GetKHACHHANGRows() {
-                if ((this.Table.ChildRelations["FK__KHACHHANG__ID_LO__5441852A"] == null)) {
+                if ((this.Table.ChildRelations["FK__KHACHHANG__ID_LO__5535A963"] == null)) {
                     return new KHACHHANGRow[0];
                 }
                 else {
-                    return ((KHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__KHACHHANG__ID_LO__5441852A"])));
+                    return ((KHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__KHACHHANG__ID_LO__5535A963"])));
                 }
             }
         }
@@ -6067,11 +6082,11 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SANPHAMNUOCHOARow[] GetSANPHAMNUOCHOARows() {
-                if ((this.Table.ChildRelations["FK__SANPHAMNU__ID_LO__4F7CD00D"] == null)) {
+                if ((this.Table.ChildRelations["FK__SANPHAMNU__ID_LO__5070F446"] == null)) {
                     return new SANPHAMNUOCHOARow[0];
                 }
                 else {
-                    return ((SANPHAMNUOCHOARow[])(base.GetChildRows(this.Table.ChildRelations["FK__SANPHAMNU__ID_LO__4F7CD00D"])));
+                    return ((SANPHAMNUOCHOARow[])(base.GetChildRows(this.Table.ChildRelations["FK__SANPHAMNU__ID_LO__5070F446"])));
                 }
             }
         }
@@ -6137,22 +6152,22 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PHIEUNHAPRow[] GetPHIEUNHAPRows() {
-                if ((this.Table.ChildRelations["FK__PHIEUNHAP__ID_NH__571DF1D5"] == null)) {
+                if ((this.Table.ChildRelations["FK__PHIEUNHAP__ID_NH__5812160E"] == null)) {
                     return new PHIEUNHAPRow[0];
                 }
                 else {
-                    return ((PHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUNHAP__ID_NH__571DF1D5"])));
+                    return ((PHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUNHAP__ID_NH__5812160E"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SANPHAMNUOCHOARow[] GetSANPHAMNUOCHOARows() {
-                if ((this.Table.ChildRelations["FK__SANPHAMNU__ID_NH__4E88ABD4"] == null)) {
+                if ((this.Table.ChildRelations["FK__SANPHAMNU__ID_NH__4F7CD00D"] == null)) {
                     return new SANPHAMNUOCHOARow[0];
                 }
                 else {
-                    return ((SANPHAMNUOCHOARow[])(base.GetChildRows(this.Table.ChildRelations["FK__SANPHAMNU__ID_NH__4E88ABD4"])));
+                    return ((SANPHAMNUOCHOARow[])(base.GetChildRows(this.Table.ChildRelations["FK__SANPHAMNU__ID_NH__4F7CD00D"])));
                 }
             }
         }
@@ -6318,11 +6333,11 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public HOADONKHACHHANGRow[] GetHOADONKHACHHANGRows() {
-                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_NH__5EBF139D"] == null)) {
+                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_NH__5FB337D6"] == null)) {
                     return new HOADONKHACHHANGRow[0];
                 }
                 else {
-                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_NH__5EBF139D"])));
+                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_NH__5FB337D6"])));
                 }
             }
             
@@ -6594,12 +6609,28 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public NHACUNGCAPRow NHACUNGCAPRow {
+            public string TENPHIEUNHAP {
                 get {
-                    return ((NHACUNGCAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUNHAP__ID_NH__571DF1D5"])));
+                    try {
+                        return ((string)(this[this.tablePHIEUNHAP.TENPHIEUNHAPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TENPHIEUNHAP\' in table \'PHIEUNHAP\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUNHAP__ID_NH__571DF1D5"]);
+                    this[this.tablePHIEUNHAP.TENPHIEUNHAPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public NHACUNGCAPRow NHACUNGCAPRow {
+                get {
+                    return ((NHACUNGCAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUNHAP__ID_NH__5812160E"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUNHAP__ID_NH__5812160E"]);
                 }
             }
             
@@ -6617,12 +6648,24 @@ namespace TestCase_DoAnNuocHoa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTENPHIEUNHAPNull() {
+                return this.IsNull(this.tablePHIEUNHAP.TENPHIEUNHAPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTENPHIEUNHAPNull() {
+                this[this.tablePHIEUNHAP.TENPHIEUNHAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CHITIETPHIEUNHAPRow[] GetCHITIETPHIEUNHAPRows() {
-                if ((this.Table.ChildRelations["FK__CHITIETPH__ID_PH__59FA5E80"] == null)) {
+                if ((this.Table.ChildRelations["FK__CHITIETPH__ID_PH__5AEE82B9"] == null)) {
                     return new CHITIETPHIEUNHAPRow[0];
                 }
                 else {
-                    return ((CHITIETPHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETPH__ID_PH__59FA5E80"])));
+                    return ((CHITIETPHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETPH__ID_PH__5AEE82B9"])));
                 }
             }
         }
@@ -6759,10 +6802,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LOAISANPHAMRow LOAISANPHAMRow {
                 get {
-                    return ((LOAISANPHAMRow)(this.GetParentRow(this.Table.ParentRelations["FK__SANPHAMNU__ID_LO__4F7CD00D"])));
+                    return ((LOAISANPHAMRow)(this.GetParentRow(this.Table.ParentRelations["FK__SANPHAMNU__ID_LO__5070F446"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SANPHAMNU__ID_LO__4F7CD00D"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SANPHAMNU__ID_LO__5070F446"]);
                 }
             }
             
@@ -6770,10 +6813,10 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public NHACUNGCAPRow NHACUNGCAPRow {
                 get {
-                    return ((NHACUNGCAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__SANPHAMNU__ID_NH__4E88ABD4"])));
+                    return ((NHACUNGCAPRow)(this.GetParentRow(this.Table.ParentRelations["FK__SANPHAMNU__ID_NH__4F7CD00D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SANPHAMNU__ID_NH__4E88ABD4"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SANPHAMNU__ID_NH__4F7CD00D"]);
                 }
             }
             
@@ -6816,22 +6859,22 @@ namespace TestCase_DoAnNuocHoa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CHITIETPHIEUNHAPRow[] GetCHITIETPHIEUNHAPRows() {
-                if ((this.Table.ChildRelations["FK__CHITIETPH__ID_NU__5AEE82B9"] == null)) {
+                if ((this.Table.ChildRelations["FK__CHITIETPH__ID_NU__5BE2A6F2"] == null)) {
                     return new CHITIETPHIEUNHAPRow[0];
                 }
                 else {
-                    return ((CHITIETPHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETPH__ID_NU__5AEE82B9"])));
+                    return ((CHITIETPHIEUNHAPRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETPH__ID_NU__5BE2A6F2"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public HOADONKHACHHANGRow[] GetHOADONKHACHHANGRows() {
-                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_NU__5FB337D6"] == null)) {
+                if ((this.Table.ChildRelations["FK__HOADONKHA__ID_NU__60A75C0F"] == null)) {
                     return new HOADONKHACHHANGRow[0];
                 }
                 else {
-                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_NU__5FB337D6"])));
+                    return ((HOADONKHACHHANGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOADONKHA__ID_NU__60A75C0F"])));
                 }
             }
         }
@@ -7411,7 +7454,7 @@ namespace TestCase_DoAnNuocHoa {
         }
     }
 }
-namespace TestCase_DoAnNuocHoa.QLCHNUOCHOADataSetTableAdapters {
+namespace TestCase_DoAnNuocHoa.TestCase_NuocHoaDataSetTableAdapters {
     
     
     /// <summary>
@@ -7578,7 +7621,7 @@ SELECT ID_CALAM, TENCA, GIOBATDAU, GIOKETTHUC FROM CALAMVIEC WHERE (ID_CALAM = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7595,7 +7638,7 @@ SELECT ID_CALAM, TENCA, GIOBATDAU, GIOKETTHUC FROM CALAMVIEC WHERE (ID_CALAM = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.CALAMVIECDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.CALAMVIECDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7608,9 +7651,9 @@ SELECT ID_CALAM, TENCA, GIOBATDAU, GIOKETTHUC FROM CALAMVIEC WHERE (ID_CALAM = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.CALAMVIECDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.CALAMVIECDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.CALAMVIECDataTable dataTable = new QLCHNUOCHOADataSet.CALAMVIECDataTable();
+            TestCase_NuocHoaDataSet.CALAMVIECDataTable dataTable = new TestCase_NuocHoaDataSet.CALAMVIECDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7618,14 +7661,14 @@ SELECT ID_CALAM, TENCA, GIOBATDAU, GIOKETTHUC FROM CALAMVIEC WHERE (ID_CALAM = @
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.CALAMVIECDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.CALAMVIECDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "CALAMVIEC");
         }
         
@@ -7916,7 +7959,7 @@ SELECT ID_CHAMCONG, NGAYLAMVIEC, TRANGTHAI, ID_NHANVIEN FROM CHAMCONGLAMVIEC WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7933,7 +7976,7 @@ SELECT ID_CHAMCONG, NGAYLAMVIEC, TRANGTHAI, ID_NHANVIEN FROM CHAMCONGLAMVIEC WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.CHAMCONGLAMVIECDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.CHAMCONGLAMVIECDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7946,9 +7989,9 @@ SELECT ID_CHAMCONG, NGAYLAMVIEC, TRANGTHAI, ID_NHANVIEN FROM CHAMCONGLAMVIEC WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.CHAMCONGLAMVIECDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.CHAMCONGLAMVIECDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.CHAMCONGLAMVIECDataTable dataTable = new QLCHNUOCHOADataSet.CHAMCONGLAMVIECDataTable();
+            TestCase_NuocHoaDataSet.CHAMCONGLAMVIECDataTable dataTable = new TestCase_NuocHoaDataSet.CHAMCONGLAMVIECDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7956,14 +7999,14 @@ SELECT ID_CHAMCONG, NGAYLAMVIEC, TRANGTHAI, ID_NHANVIEN FROM CHAMCONGLAMVIEC WHE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.CHAMCONGLAMVIECDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.CHAMCONGLAMVIECDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "CHAMCONGLAMVIEC");
         }
         
@@ -8283,7 +8326,7 @@ SELECT ID_CTPHIEUNHAP, ID_PHIEUNHAP, ID_NUOCHOA, DONGIANHAP, SOLUONGNHAP FROM CH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8301,7 +8344,7 @@ SELECT ID_CTPHIEUNHAP, ID_PHIEUNHAP, ID_NUOCHOA, DONGIANHAP, SOLUONGNHAP FROM CH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.CHITIETPHIEUNHAPDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.CHITIETPHIEUNHAPDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8314,9 +8357,9 @@ SELECT ID_CTPHIEUNHAP, ID_PHIEUNHAP, ID_NUOCHOA, DONGIANHAP, SOLUONGNHAP FROM CH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.CHITIETPHIEUNHAPDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.CHITIETPHIEUNHAPDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.CHITIETPHIEUNHAPDataTable dataTable = new QLCHNUOCHOADataSet.CHITIETPHIEUNHAPDataTable();
+            TestCase_NuocHoaDataSet.CHITIETPHIEUNHAPDataTable dataTable = new TestCase_NuocHoaDataSet.CHITIETPHIEUNHAPDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8324,14 +8367,14 @@ SELECT ID_CTPHIEUNHAP, ID_PHIEUNHAP, ID_NUOCHOA, DONGIANHAP, SOLUONGNHAP FROM CH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.CHITIETPHIEUNHAPDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.CHITIETPHIEUNHAPDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "CHITIETPHIEUNHAP");
         }
         
@@ -8676,7 +8719,7 @@ SELECT ID_HOADONKHACHHANG, NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, ID_NUOCHOA, TENS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8694,7 +8737,7 @@ SELECT ID_HOADONKHACHHANG, NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, ID_NUOCHOA, TENS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.HOADONKHACHHANGDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.HOADONKHACHHANGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8707,9 +8750,9 @@ SELECT ID_HOADONKHACHHANG, NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, ID_NUOCHOA, TENS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.HOADONKHACHHANGDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.HOADONKHACHHANGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.HOADONKHACHHANGDataTable dataTable = new QLCHNUOCHOADataSet.HOADONKHACHHANGDataTable();
+            TestCase_NuocHoaDataSet.HOADONKHACHHANGDataTable dataTable = new TestCase_NuocHoaDataSet.HOADONKHACHHANGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8717,14 +8760,14 @@ SELECT ID_HOADONKHACHHANG, NGAYXUAT, ID_KHACHHANG, ID_NHANVIEN, ID_NUOCHOA, TENS
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.HOADONKHACHHANGDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.HOADONKHACHHANGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "HOADONKHACHHANG");
         }
         
@@ -9127,7 +9170,7 @@ SELECT ID_KHACHHANG, HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG FROM KHACHHA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9145,7 +9188,7 @@ SELECT ID_KHACHHANG, HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG FROM KHACHHA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.KHACHHANGDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.KHACHHANGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9158,9 +9201,9 @@ SELECT ID_KHACHHANG, HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG FROM KHACHHA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.KHACHHANGDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.KHACHHANGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.KHACHHANGDataTable dataTable = new QLCHNUOCHOADataSet.KHACHHANGDataTable();
+            TestCase_NuocHoaDataSet.KHACHHANGDataTable dataTable = new TestCase_NuocHoaDataSet.KHACHHANGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9168,14 +9211,14 @@ SELECT ID_KHACHHANG, HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG FROM KHACHHA
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.KHACHHANGDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.KHACHHANGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "KHACHHANG");
         }
         
@@ -9544,7 +9587,7 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9561,7 +9604,7 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.LOAIKHACHHANGDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.LOAIKHACHHANGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9574,9 +9617,9 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.LOAIKHACHHANGDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.LOAIKHACHHANGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.LOAIKHACHHANGDataTable dataTable = new QLCHNUOCHOADataSet.LOAIKHACHHANGDataTable();
+            TestCase_NuocHoaDataSet.LOAIKHACHHANGDataTable dataTable = new TestCase_NuocHoaDataSet.LOAIKHACHHANGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9584,14 +9627,14 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.LOAIKHACHHANGDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.LOAIKHACHHANGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "LOAIKHACHHANG");
         }
         
@@ -9866,7 +9909,7 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9883,7 +9926,7 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.LOAISANPHAMDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.LOAISANPHAMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9896,9 +9939,9 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.LOAISANPHAMDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.LOAISANPHAMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.LOAISANPHAMDataTable dataTable = new QLCHNUOCHOADataSet.LOAISANPHAMDataTable();
+            TestCase_NuocHoaDataSet.LOAISANPHAMDataTable dataTable = new TestCase_NuocHoaDataSet.LOAISANPHAMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9906,14 +9949,14 @@ SELECT ID_LOAIKHACHHANG, TENLOAI, GIAMGIA FROM LOAIKHACHHANG WHERE (ID_LOAIKHACH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.LOAISANPHAMDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.LOAISANPHAMDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "LOAISANPHAM");
         }
         
@@ -10192,7 +10235,7 @@ SELECT ID_NHACC, TENNCC, DIACHI, SDT FROM NHACUNGCAP WHERE (ID_NHACC = @ID_NHACC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10209,7 +10252,7 @@ SELECT ID_NHACC, TENNCC, DIACHI, SDT FROM NHACUNGCAP WHERE (ID_NHACC = @ID_NHACC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.NHACUNGCAPDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.NHACUNGCAPDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10222,9 +10265,9 @@ SELECT ID_NHACC, TENNCC, DIACHI, SDT FROM NHACUNGCAP WHERE (ID_NHACC = @ID_NHACC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.NHACUNGCAPDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.NHACUNGCAPDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.NHACUNGCAPDataTable dataTable = new QLCHNUOCHOADataSet.NHACUNGCAPDataTable();
+            TestCase_NuocHoaDataSet.NHACUNGCAPDataTable dataTable = new TestCase_NuocHoaDataSet.NHACUNGCAPDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10232,14 +10275,14 @@ SELECT ID_NHACC, TENNCC, DIACHI, SDT FROM NHACUNGCAP WHERE (ID_NHACC = @ID_NHACC
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.NHACUNGCAPDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.NHACUNGCAPDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "NHACUNGCAP");
         }
         
@@ -10576,7 +10619,7 @@ SELECT ID_NHANVIEN, HOTEN, NGAYSINH, DIACHI, SDT, TONGNGAYCONG, TONGLUONG, ID_TA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10594,7 +10637,7 @@ SELECT ID_NHANVIEN, HOTEN, NGAYSINH, DIACHI, SDT, TONGNGAYCONG, TONGLUONG, ID_TA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.NHANVIENDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.NHANVIENDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10607,9 +10650,9 @@ SELECT ID_NHANVIEN, HOTEN, NGAYSINH, DIACHI, SDT, TONGNGAYCONG, TONGLUONG, ID_TA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.NHANVIENDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.NHANVIENDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.NHANVIENDataTable dataTable = new QLCHNUOCHOADataSet.NHANVIENDataTable();
+            TestCase_NuocHoaDataSet.NHANVIENDataTable dataTable = new TestCase_NuocHoaDataSet.NHANVIENDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10617,14 +10660,14 @@ SELECT ID_NHANVIEN, HOTEN, NGAYSINH, DIACHI, SDT, TONGNGAYCONG, TONGLUONG, ID_TA
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.NHANVIENDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.NHANVIENDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "NHANVIEN");
         }
         
@@ -11008,7 +11051,7 @@ SELECT ID_PHANCONG, ID_NHANVIEN, ID_CALAM, NGAYLAM FROM PHANCONGCALAM WHERE (ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11025,7 +11068,7 @@ SELECT ID_PHANCONG, ID_NHANVIEN, ID_CALAM, NGAYLAM FROM PHANCONGCALAM WHERE (ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.PHANCONGCALAMDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.PHANCONGCALAMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11038,9 +11081,9 @@ SELECT ID_PHANCONG, ID_NHANVIEN, ID_CALAM, NGAYLAM FROM PHANCONGCALAM WHERE (ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.PHANCONGCALAMDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.PHANCONGCALAMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.PHANCONGCALAMDataTable dataTable = new QLCHNUOCHOADataSet.PHANCONGCALAMDataTable();
+            TestCase_NuocHoaDataSet.PHANCONGCALAMDataTable dataTable = new TestCase_NuocHoaDataSet.PHANCONGCALAMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11048,14 +11091,14 @@ SELECT ID_PHANCONG, ID_NHANVIEN, ID_CALAM, NGAYLAM FROM PHANCONGCALAM WHERE (ID_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.PHANCONGCALAMDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.PHANCONGCALAMDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "PHANCONGCALAM");
         }
         
@@ -11371,7 +11414,7 @@ SELECT ID_PHANQUYEN, TENQUYEN, MoTa, MUCLUONGLAMVIEC FROM PHANQUYEN WHERE (ID_PH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11388,7 +11431,7 @@ SELECT ID_PHANQUYEN, TENQUYEN, MoTa, MUCLUONGLAMVIEC FROM PHANQUYEN WHERE (ID_PH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.PHANQUYENDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.PHANQUYENDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11401,9 +11444,9 @@ SELECT ID_PHANQUYEN, TENQUYEN, MoTa, MUCLUONGLAMVIEC FROM PHANQUYEN WHERE (ID_PH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.PHANQUYENDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.PHANQUYENDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.PHANQUYENDataTable dataTable = new QLCHNUOCHOADataSet.PHANQUYENDataTable();
+            TestCase_NuocHoaDataSet.PHANQUYENDataTable dataTable = new TestCase_NuocHoaDataSet.PHANQUYENDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11411,14 +11454,14 @@ SELECT ID_PHANQUYEN, TENQUYEN, MoTa, MUCLUONGLAMVIEC FROM PHANQUYEN WHERE (ID_PH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.PHANQUYENDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.PHANQUYENDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "PHANQUYEN");
         }
         
@@ -11676,36 +11719,41 @@ SELECT ID_PHANQUYEN, TENQUYEN, MoTa, MUCLUONGLAMVIEC FROM PHANQUYEN WHERE (ID_PH
             tableMapping.ColumnMappings.Add("ID_PHIEUNHAP", "ID_PHIEUNHAP");
             tableMapping.ColumnMappings.Add("ID_NHACC", "ID_NHACC");
             tableMapping.ColumnMappings.Add("NGAYNHAP", "NGAYNHAP");
+            tableMapping.ColumnMappings.Add("TENPHIEUNHAP", "TENPHIEUNHAP");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[PHIEUNHAP] WHERE (([ID_PHIEUNHAP] = @Original_ID_PHIEUNHAP) AN" +
-                "D ((@IsNull_ID_NHACC = 1 AND [ID_NHACC] IS NULL) OR ([ID_NHACC] = @Original_ID_N" +
-                "HACC)) AND ([NGAYNHAP] = @Original_NGAYNHAP))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[PHIEUNHAP] WHERE (([ID_PHIEUNHAP] = @Original_ID_PHIEUNHAP) AND ((@IsNull_ID_NHACC = 1 AND [ID_NHACC] IS NULL) OR ([ID_NHACC] = @Original_ID_NHACC)) AND ([NGAYNHAP] = @Original_NGAYNHAP) AND ((@IsNull_TENPHIEUNHAP = 1 AND [TENPHIEUNHAP] IS NULL) OR ([TENPHIEUNHAP] = @Original_TENPHIEUNHAP)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_PHIEUNHAP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_PHIEUNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NGAYNHAP", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TENPHIEUNHAP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TENPHIEUNHAP", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[PHIEUNHAP] ([ID_NHACC], [NGAYNHAP]) VALUES (@ID_NHACC, @NGAYNH" +
-                "AP);\r\nSELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP" +
-                " = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[PHIEUNHAP] ([ID_NHACC], [NGAYNHAP], [TENPHIEUNHAP]) VALUES (@I" +
+                "D_NHACC, @NGAYNHAP, @TENPHIEUNHAP);\r\nSELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP, TE" +
+                "NPHIEUNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NGAYNHAP", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYNHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TENPHIEUNHAP", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PHIEUNHAP] SET [ID_NHACC] = @ID_NHACC, [NGAYNHAP] = @NGAYNHAP WHERE (([ID_PHIEUNHAP] = @Original_ID_PHIEUNHAP) AND ((@IsNull_ID_NHACC = 1 AND [ID_NHACC] IS NULL) OR ([ID_NHACC] = @Original_ID_NHACC)) AND ([NGAYNHAP] = @Original_NGAYNHAP));
-SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID_PHIEUNHAP)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PHIEUNHAP] SET [ID_NHACC] = @ID_NHACC, [NGAYNHAP] = @NGAYNHAP, [TENPHIEUNHAP] = @TENPHIEUNHAP WHERE (([ID_PHIEUNHAP] = @Original_ID_PHIEUNHAP) AND ((@IsNull_ID_NHACC = 1 AND [ID_NHACC] IS NULL) OR ([ID_NHACC] = @Original_ID_NHACC)) AND ([NGAYNHAP] = @Original_NGAYNHAP) AND ((@IsNull_TENPHIEUNHAP = 1 AND [TENPHIEUNHAP] IS NULL) OR ([TENPHIEUNHAP] = @Original_TENPHIEUNHAP)));
+SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP, TENPHIEUNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID_PHIEUNHAP)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NGAYNHAP", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYNHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TENPHIEUNHAP", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_PHIEUNHAP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_PHIEUNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_NHACC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_NHACC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NGAYNHAP", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TENPHIEUNHAP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TENPHIEUNHAP", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENPHIEUNHAP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_PHIEUNHAP", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_PHIEUNHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -11713,7 +11761,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11722,7 +11770,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM dbo.PHIEUNHAP";
+            this._commandCollection[0].CommandText = "SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP, TENPHIEUNHAP FROM dbo.PHIEUNHAP";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11730,7 +11778,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.PHIEUNHAPDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.PHIEUNHAPDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11743,9 +11791,9 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.PHIEUNHAPDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.PHIEUNHAPDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.PHIEUNHAPDataTable dataTable = new QLCHNUOCHOADataSet.PHIEUNHAPDataTable();
+            TestCase_NuocHoaDataSet.PHIEUNHAPDataTable dataTable = new TestCase_NuocHoaDataSet.PHIEUNHAPDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11753,14 +11801,14 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.PHIEUNHAPDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.PHIEUNHAPDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "PHIEUNHAP");
         }
         
@@ -11783,7 +11831,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP) {
+        public virtual int Delete(int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP, string Original_TENPHIEUNHAP) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_PHIEUNHAP));
             if ((Original_ID_NHACC.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -11794,6 +11842,14 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_NGAYNHAP));
+            if ((Original_TENPHIEUNHAP == null)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_TENPHIEUNHAP));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11814,7 +11870,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP) {
+        public virtual int Insert(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP, string TENPHIEUNHAP) {
             if ((ID_NHACC.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID_NHACC.Value));
             }
@@ -11822,6 +11878,12 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(NGAYNHAP));
+            if ((TENPHIEUNHAP == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TENPHIEUNHAP));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11842,7 +11904,7 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP, int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP, int ID_PHIEUNHAP) {
+        public virtual int Update(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP, string TENPHIEUNHAP, int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP, string Original_TENPHIEUNHAP, int ID_PHIEUNHAP) {
             if ((ID_NHACC.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID_NHACC.Value));
             }
@@ -11850,17 +11912,31 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(NGAYNHAP));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_ID_PHIEUNHAP));
-            if ((Original_ID_NHACC.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID_NHACC.Value));
+            if ((TENPHIEUNHAP == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TENPHIEUNHAP));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(Original_NGAYNHAP));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(ID_PHIEUNHAP));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_ID_PHIEUNHAP));
+            if ((Original_ID_NHACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID_NHACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_NGAYNHAP));
+            if ((Original_TENPHIEUNHAP == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_TENPHIEUNHAP));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(ID_PHIEUNHAP));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11881,8 +11957,8 @@ SELECT ID_PHIEUNHAP, ID_NHACC, NGAYNHAP FROM PHIEUNHAP WHERE (ID_PHIEUNHAP = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP, int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP) {
-            return this.Update(ID_NHACC, NGAYNHAP, Original_ID_PHIEUNHAP, Original_ID_NHACC, Original_NGAYNHAP, Original_ID_PHIEUNHAP);
+        public virtual int Update(global::System.Nullable<int> ID_NHACC, System.DateTime NGAYNHAP, string TENPHIEUNHAP, int Original_ID_PHIEUNHAP, global::System.Nullable<int> Original_ID_NHACC, System.DateTime Original_NGAYNHAP, string Original_TENPHIEUNHAP) {
+            return this.Update(ID_NHACC, NGAYNHAP, TENPHIEUNHAP, Original_ID_PHIEUNHAP, Original_ID_NHACC, Original_NGAYNHAP, Original_TENPHIEUNHAP, Original_ID_PHIEUNHAP);
         }
     }
     
@@ -12078,7 +12154,7 @@ SELECT ID_NUOCHOA, TENSANPHAM, DUNGTICH, DONGIA, GIAMGIA, SOLUONGTON, DABAN, ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12096,7 +12172,7 @@ SELECT ID_NUOCHOA, TENSANPHAM, DUNGTICH, DONGIA, GIAMGIA, SOLUONGTON, DABAN, ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.SANPHAMNUOCHOADataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.SANPHAMNUOCHOADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12109,9 +12185,9 @@ SELECT ID_NUOCHOA, TENSANPHAM, DUNGTICH, DONGIA, GIAMGIA, SOLUONGTON, DABAN, ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.SANPHAMNUOCHOADataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.SANPHAMNUOCHOADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.SANPHAMNUOCHOADataTable dataTable = new QLCHNUOCHOADataSet.SANPHAMNUOCHOADataTable();
+            TestCase_NuocHoaDataSet.SANPHAMNUOCHOADataTable dataTable = new TestCase_NuocHoaDataSet.SANPHAMNUOCHOADataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12119,14 +12195,14 @@ SELECT ID_NUOCHOA, TENSANPHAM, DUNGTICH, DONGIA, GIAMGIA, SOLUONGTON, DABAN, ID_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.SANPHAMNUOCHOADataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.SANPHAMNUOCHOADataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "SANPHAMNUOCHOA");
         }
         
@@ -12546,7 +12622,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.QLCHNUOCHOAConnectionString;
+            this._connection.ConnectionString = global::TestCase_DoAnNuocHoa.Properties.Settings.Default.TestCase_NuocHoaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12563,7 +12639,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLCHNUOCHOADataSet.TAIKHOANDataTable dataTable) {
+        public virtual int Fill(TestCase_NuocHoaDataSet.TAIKHOANDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12576,9 +12652,9 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLCHNUOCHOADataSet.TAIKHOANDataTable GetData() {
+        public virtual TestCase_NuocHoaDataSet.TAIKHOANDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLCHNUOCHOADataSet.TAIKHOANDataTable dataTable = new QLCHNUOCHOADataSet.TAIKHOANDataTable();
+            TestCase_NuocHoaDataSet.TAIKHOANDataTable dataTable = new TestCase_NuocHoaDataSet.TAIKHOANDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12586,14 +12662,14 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet.TAIKHOANDataTable dataTable) {
+        public virtual int Update(TestCase_NuocHoaDataSet.TAIKHOANDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLCHNUOCHOADataSet dataSet) {
+        public virtual int Update(TestCase_NuocHoaDataSet dataSet) {
             return this.Adapter.Update(dataSet, "TAIKHOAN");
         }
         
@@ -13153,7 +13229,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(QLCHNUOCHOADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(TestCase_NuocHoaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._pHANQUYENTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -13289,7 +13365,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(QLCHNUOCHOADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(TestCase_NuocHoaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._pHANQUYENTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -13411,7 +13487,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(QLCHNUOCHOADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(TestCase_NuocHoaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._pHANCONGCALAMTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.PHANCONGCALAM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -13557,7 +13633,7 @@ SELECT ID_TAIKHOAN, EMAIL, MATKHAU, ID_PHANQUYEN FROM TAIKHOAN WHERE (ID_TAIKHOA
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(QLCHNUOCHOADataSet dataSet) {
+        public virtual int UpdateAll(TestCase_NuocHoaDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

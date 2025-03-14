@@ -72,16 +72,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLCHNUOCHOADataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCHNUOCHOADataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="QuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestCase_NuocHoaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestCase_NuocHoaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UserForm\HoaDonKhachHang.cs">
       <SubType>UserControl</SubType>
@@ -134,16 +134,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLCHNUOCHOADataSet.xsc">
-      <DependentUpon>QLCHNUOCHOADataSet.xsd</DependentUpon>
+    <None Include="TestCase_NuocHoaDataSet.xsc">
+      <DependentUpon>TestCase_NuocHoaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QLCHNUOCHOADataSet.xsd">
+    <None Include="TestCase_NuocHoaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLCHNUOCHOADataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>TestCase_NuocHoaDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QLCHNUOCHOADataSet.xss">
-      <DependentUpon>QLCHNUOCHOADataSet.xsd</DependentUpon>
+    <None Include="TestCase_NuocHoaDataSet.xss">
+      <DependentUpon>TestCase_NuocHoaDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

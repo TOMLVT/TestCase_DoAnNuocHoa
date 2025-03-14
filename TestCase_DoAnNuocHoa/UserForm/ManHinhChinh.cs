@@ -333,9 +333,9 @@ namespace TestCase_DoAnNuocHoa.UserForm
                 {
                     // 1️ .  Lưu khách hàng vào bảng KHACHHANG nếu chưa có 
                     string insertKhachHangQuery = @"
-            INSERT INTO KHACHHANG (HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG) 
-            VALUES (@HoTen, @NgaySinh, @DiaChi, @SDT, @LoaiKH);
-            SELECT SCOPE_IDENTITY();";
+                    INSERT INTO KHACHHANG (HOTEN, NGAYSINH, DIACHI, SDT, ID_LOAIKHACHHANG) 
+                    VALUES (@HoTen, @NgaySinh, @DiaChi, @SDT, @LoaiKH);
+                    SELECT SCOPE_IDENTITY();";
 
                     SqlCommand cmdKhachHang = new SqlCommand(insertKhachHangQuery, conn, transaction);
                     cmdKhachHang.Parameters.AddWithValue("@HoTen", txtHoTen.Text);

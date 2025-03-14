@@ -65,7 +65,7 @@ namespace TestCase_DoAnNuocHoa
                             int maPQ = Convert.ToInt32(table.Rows[0]["ID_PHANQUYEN"]);
                           
 
-                            if (maPQ == 1)
+                            if (maPQ == 3)
                             {
                                 MessageBox.Show("Đăng nhập thành công màn hình - QUẢN LÝ !", "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -73,7 +73,7 @@ namespace TestCase_DoAnNuocHoa
                                 manHinhChinh.Show();
                                 this.Hide();
                             }
-                            else if (maPQ == 2)
+                            else if (maPQ == 4)
                             {
                                 MessageBox.Show("Đăng nhập thành công màn hình - NHÂN VIÊN !", "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

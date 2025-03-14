@@ -33,5 +33,16 @@ namespace TestCase_DoAnNuocHoa.Properties {
                 return ((string)(this["QLCHNUOCHOAConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-DOCKI20T;Initial Catalog=TestCase_NuocHoa;Integrated Security=" +
+            "True;TrustServerCertificate=True")]
+        public string TestCase_NuocHoaConnectionString {
+            get {
+                return ((string)(this["TestCase_NuocHoaConnectionString"]));
+            }
+        }
     }
 }
